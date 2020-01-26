@@ -5,6 +5,8 @@
 %global goipath         github.com/blevesearch/segment
 %global commit          762005e7a34fd909a84586299f1dd457371d36ee
 
+%global debug_package   %{nil}
+
 %gometa
 
 %global common_description %{expand:
@@ -55,3 +57,4 @@ install -m 0755 -vp %{gobuilddir}/bin/* %{buildroot}%{_bindir}/
 %changelog
 * Sun Jan 26 04:57:25 CET 2020 Marcel Metz <mmetz@adrian-broher.net> - 0-0.1.20200126git762005e
 - Initial package
+- Disable debug information package
